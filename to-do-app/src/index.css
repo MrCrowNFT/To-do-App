@@ -1,3 +1,53 @@
+.to-do-list {
+  font-family: cursive;
+  font-weight: bold;
+  text-align: center;
+  font-size: large;
+}
+
+.task-input {
+  display: flex;
+  flex-direction: row;
+  align-items: center; /* Align items vertically */
+  justify-content: center; /* Center items horizontally */
+  gap: 4px;
+  width: 80%;
+  margin: 0 auto; 
+  font-family: cursive;
+  height: 3rem;
+}
+
+.objective-input, .date-picker, .add-button {
+  height: 100%; /* Match the height of the .task-input container */
+  padding: 0.5rem; 
+  border: 1px solid #ccc;
+  border-radius: 5px; 
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+.objective-input, .date-picker {
+  flex:3; /* Allow inputs to grow and shrink evenly */
+}
+
+.add-button {
+  flex: 1;
+  text-align: center;
+  background-color: hsl(211, 100%, 50%);
+  color: white;
+  cursor: pointer;
+  border: none;
+  padding: 0 1rem;
+  box-sizing: border-box;
+}
+
+.add-button:hover {
+  background-color: hsl(211, 100%, 35%); 
+}
+input::placeholder, text::placeholder,
+.date-picker, .state-select{
+  font-family: cursive;
+}
 .task{
   display: flex;
   flex-direction: row;
@@ -19,8 +69,8 @@
   flex: 1; /* Allows the elements to take up equal space */
 }
 .bin img {
-  max-width: 10%;
-  max-height: 10%;
+  max-width: 15%;
+  max-height: 15%;
   object-fit: contain;
   cursor: pointer;
 }
