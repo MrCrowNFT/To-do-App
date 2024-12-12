@@ -7,18 +7,20 @@
   width:100%;
   align-items: center;
   gap: 10px;
+  transition: background-color 0.3s;
 }
 .task p{
   margin: 10px;
   flex: 1;
 }
 .task select, .task button {
+  background: none;
   border: none;
   flex: 1; /* Allows the elements to take up equal space */
 }
-.bin{
-  border: none;
-  max-width: 20px;  
-  max-height: auto; /* Ensure it fits within the flex container */
+.bin img {
+  max-width: 10%;
+  max-height: 10%;
   object-fit: contain;
+  cursor: pointer;
 }
