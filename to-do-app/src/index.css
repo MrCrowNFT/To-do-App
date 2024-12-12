@@ -1,0 +1,24 @@
+.task{
+  display: flex;
+  flex-direction: row;
+  border: 3px solid hsl(0, 0%, 35%);
+  border-radius: 20px;
+  height: 5rem;
+  width:100%;
+  align-items: center;
+  gap: 10px;
+}
+.task p{
+  margin: 10px;
+  flex: 1;
+}
+.task select, .task button {
+  border: none;
+  flex: 1; /* Allows the elements to take up equal space */
+}
+.bin{
+  border: none;
+  max-width: 20px;  
+  max-height: auto; /* Ensure it fits within the flex container */
+  object-fit: contain;
+}

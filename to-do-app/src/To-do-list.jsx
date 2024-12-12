@@ -49,18 +49,20 @@ function ToDoList(){
         <ol>
             {tasks.map((task, index) =>
                 <li className="task" key={index}>
-                                <p>{task.Objective}</p>
-                                <p>{task.Deadline}</p> 
-                                <p>{task.State}</p>
+                                
+                                    <p>{task.Objective}</p>
+                                    <p>{task.Deadline}</p> 
+                                
                                 <select value={task.State} 
                                     onChange={(event) => handleSetState(index, event.target.value)}>
-                                        <option value="">Select an option</option>
+                                        <option value="" disabled>Select an option</option>
                                         <option value="Pending">Pending</option>
                                         <option value="In Progress">In Progress</option>
                                         <option value="Done">Done</option>
                                 </select>
                                 <button><img src={bin} 
-                                             onClick={() =>handleRemoveTask(index)}/>
+                                             onClick={() =>handleRemoveTask(index)}
+                                             className="bin"/>
                                 </button>
                 </li>)}
         </ol>
